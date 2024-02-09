@@ -1,0 +1,240 @@
+@import "variables";
+@import "mixins";
+
+.btn-primary {
+  background-color: $amaranth-purple;
+  color: $white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 0;
+}
+.btn-secondary {
+  background-color: $white;
+  color: $black;
+  border: none;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0;
+  &:hover {
+    background-color: $amaranth-purple;
+    color: $white;
+  }
+}
+.card-columns {
+  column-count: 2;
+}
+.title {
+  @include font(34px, 500, $amaranth-purple);
+  @include common-media-query(md) {
+    @include font(30px);
+  }
+}
+.desctription {
+  @include font(20px);
+}
+.carousel img {
+  height: 500px;
+}
+input {
+  border: 1px solid $amaranth-purple !important;
+}
+input:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: none;
+}
+.bi-check2 {
+  font-size: 20px;
+  font-weight: 600px;
+  color: $amaranth-purple;
+}
+// header
+header {
+  background-color: $white;
+  .nav-item {
+    margin-right: 10px;
+    .nav-link {
+      color: $amaranth-purple;
+      font-weight: 600;
+    }
+    .profile {
+      color: $amaranth-purple;
+      background: transparent;
+      border: none;
+      padding: 8px;
+    }
+    &:last-child .nav-link {
+      background-color: $amaranth-purple;
+      color: $white;
+    }
+    &:hover .nav-link {
+      background-color: $amaranth-purple;
+      color: $white;
+    }
+  }
+}
+// hero
+.hero-banner {
+  height: calc(100vh - 117px);
+  width: 100%;
+  background: url(../img/bg/bg-1.jpg) no-repeat center;
+  background-size: cover;
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+      .col {
+        margin: auto 0;
+        h1 {
+          @include font(56px, 600, $amaranth-purple);
+          margin-bottom: 30px;
+          @include common-media-query(md) {
+            @include font(40px);
+          }
+        }
+        p {
+          @include font(25px, 400, $black);
+          margin-bottom: 30px;
+          @include common-media-query(md) {
+            @include font(20px);
+          }
+        }
+        .btn-primary {
+          @extend .btn-primary;
+          margin-right: 20px;
+        }
+        .btn-secondary {
+          @extend .btn-secondary;
+        }
+      }
+    }
+  }
+}
+// story
+.story {
+  width: 100%;
+  background: url(../img/bg/bg-2.jpg) no-repeat center;
+  background-size: cover;
+}
+// explorefood
+.explorefood {
+  .food-title {
+    @include font(22px, 600, $amaranth-purple);
+  }
+  .food-time {
+    @include font(16px, 400, $gray);
+  }
+  .food-price {
+    @include font(20px, 600, $medium-carmine);
+    del {
+      color: $gray;
+    }
+  }
+  .card-footer {
+    border: 0;
+    background-color: $white;
+    display: flex;
+  }
+  .btn {
+    width: fit-content;
+  }
+}
+// testimonials
+.testimonials {
+  background-color: $amaranth-purple;
+  .testimonials-user {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+  }
+  .testimonials-content {
+    width: 50%;
+    @include font(22px, 400, $gray);
+    @include common-media-query(lg) {
+      width: 100%;
+    }
+  }
+  .testimonials-name {
+    @include font(22px, 400, $amaranth-purple);
+  }
+  .carousel-dot {
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border-radius: 100%;
+    opacity: 0.4;
+    margin-right: 10px;
+  }
+  .carousel-indicators .active {
+    background-color: $white;
+    opacity: 1;
+  }
+}
+// FAQ
+.faq {
+  h3 {
+    @include font(22px, 500, $amaranth-purple);
+  }
+  p {
+    @include font(20px, 400, $gray);
+  }
+}
+
+// backed
+.backed {
+  background: url(../img/bg/bg-3.jpg) no-repeat center;
+  background-size: cover;
+}
+// hurryup
+.hurryup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin: 50px 0;
+  .hurryup-form {
+    width: 50%;
+    @include common-media-query(lg) {
+      width: 100%;
+    }
+  }
+  h2 {
+    @include font(30px, 600, $amaranth-purple);
+  }
+  p {
+    @include font(18px, 400, $gray);
+  }
+  input {
+    border: 3px solid $amaranth-purple !important;
+    border-radius: 0 !important;
+    &:focus {
+      outline: none;
+      box-shadow: none !important;
+      border: none;
+    }
+  }
+}
+
+// footer
+footer {
+  background: $amaranth-purple;
+  color: $white;
+  text-align: center;
+  padding: 30px;
+  .navbar {
+    justify-content: center;
+    .nav-link {
+      color: $white;
+    }
+  }
+  .bi {
+    font-size: 40px;
+    color: $white;
+    margin-right: 30px;
+  }
+}

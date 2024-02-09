@@ -1,0 +1,202 @@
+Bootstrap
+
+1. layout
+
+.container 
+     .row
+        .col
+
+2. breakpoint
+
+1. sm
+2. md
+3. lg
+4. xl
+
+3. container
+
+1. container
+2. container-fuild
+
+ 4. row
+row
+1. row-cols-(number)
+5. col
+col-(breakpoint)-(1-12)
+
+1. col-(breakpoint)-(1-12)
+2. col-md-5 , col-md-7
+3. col  or col-12       -- 100%
+
+
+
+
+6. offset – gap
+
+offset-(breakpoint)-(0-11)
+
+ 
+ 7. order
+
+order-(breakpoint)-(number,first,last)
+
+
+ 8. margin
+
+(m, ml, mr,mt,mb,my,mx)-(breakpoint)-(0-5,auto)
+
+9. padding
+
+(p,pl,pr,pt,pb,py,px)-(breakpoint)-(0-5,auto)
+
+9. justify-content
+row ---|
+justify-content-(breakpoint)-(center,start,end,around,between)
+
+10. align-content
+row ---|
+align-content-(breakpoint)-(center,start,end,around,between)
+
+11. align-items  - for content box
+row ---|
+align-items-(breakpoint)-(center,start,end,baseline,stretch)
+
+
+
+12. align-self  - particular content div
+col ---|
+align-self-(breakpoint)-(center,start,end,baseline,stretch)
+13. flex 
+flex-(breakpoint)-(row,column,wrap)
+row ---|
+1. flex-row
+2. flex-row-reverse
+3. flex-column
+4. flex-column-reverse
+5. flex-wrap
+
+14. display
+d-(breakpoint)-(none,flex,inline)
+1. d-md-flex
+
+ 15. width 
+w-(breakpoint)-(25,50,75,100,auto)
+mw-(breakpoint)-100 ==> max-width
+vw-100
+
+16. height 
+h-(breakpoint)-(25,50,75,100,auto)
+mh-(breakpoint)-100 ==> max-height
+vh-100
+min-vh-100
+
+
+17. position 
+
+1. fixed-(top,bottom)
+2. sticky-(top,bottom)
+
+
+
+18. overflow
+
+1. overflow-hidden
+2. overflow-auto
+
+
+ 19. text align
+text-(breakpoint)-(left,right,center,justify)
+1.text-left
+
+ 20. text transform
+text-(breakpoint)-(uppercase,lowercase)
+1.text- uppercase
+
+ 21. font weight
+font-weight-(bold,bolder,light,lighter,normal)
+1.font -  bold
+2.font- italic
+
+ 21. font size
+display-(breakpoint)-(1,2,3,4) --> 1=big
+1.display-1
+2.lead
+
+ 22. list style
+
+1.list-unstyle
+2.ul - > list-inline
+	li - > list-inline-item
+
+ 23. button
+
+btn
+- > btn-primary
+ - > btn-outline-primary
+ - > btn-block -->full width
+      - > btn-lg
+      - > btn-group     btn-group-lg
+      - > btn-group-vertical     btn-group-lg
+      - > btn-toolbar
+
+ 24. list
+1. list-inline , list-inline-item
+2. list-group , list-group-item
+3. list-group-flush ,list-group-item-action
+4.  list-group-horizontal ,list-group-item-danger
+
+
+ 25. Table
+div  - >  table-responsive
+1. table - > table , table-dark, table-striped , table-bordered, table-borderless , table-hover
+2.thead - > thead-dark , thead-light
+3.tr,td - > table-danger -> for light bg
+            bg- success -> for dark bg
+
+25. dropdown
+data-toggle="dropdown"
+1. dropdown-menu , dropdown-menu-item
+2. dropdown-toggle -> for arrow icon
+
+ 26. pagination
+
+<nav>
+<ul class="pagination">
+<li class="page-item disabled">
+<a class="page-link">Previous</a>
+</li>
+<li class="page-item active">
+<a class="page-link">1</a>
+</li>
+<li class="page-item">
+<a class="page-link">2</a>
+</li>
+<li class="page-item">
+<a class="page-link">Next</a>
+</li>
+</ul>
+</nav>
+ 26. Breadcrumb
+
+<nav>
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="">Home</a>
+</li>
+<li class="breadcrumb-item">
+<a href="">About</a>
+</li>
+<li class="breadcrumb-item active">Services</li>
+</ol>
+</nav>
+
+
+27.Gutters (gap)
+(g,gx,gy)-(breakpoint)-[0-5]
+
+1. g-5
+
+ 27.Line-height
+lh-(1,sm,base,lg)
+
+1. lh-sm
